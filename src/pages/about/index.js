@@ -3,9 +3,9 @@ import profile1 from "../../assets/images/profiles/profile-1.jpg";
 
 const About = () => {
   return (
-    <div className="md:flex md:flex-wrap -mt-10 md:mt-0 md:pt-14 justify-between text-2xl text-white">
-      <div className="md:flex md:flex-wrap p-8">
-        <div className="flex flex-wrap md:justify-between md:pb-10">
+    <div className="md:flex md:flex-wrap -mt-10 md:mt-0 md:py-14 px-5 justify-between text-2xl text-white">
+      <div className="md:flex md:flex-wrap pt-8">
+        <div className="flex flex-wrap md:justify-between">
           <div className="lg:px-5 pb-10 lg:pb-0 text-justify lg:w-1/2 md:text-3xl first-line:italic">
             <span className="font-extrabold text-4xl md:text-6xl">S</span>am{" "}
             <span className="font-extrabold text-4xl md:text-6xl">D</span>enton{" "}
@@ -20,12 +20,11 @@ const About = () => {
           </div>
           <div
             id="carousel"
-            className="flex rounded-xl overflow-scroll h-fit lg:w-1/2"
+            className="flex rounded-xl overflow-scroll h-fit mx-auto lg:w-[45%]"
           >
             <img className="object-cover" src={profile1} alt="profile-img-1" />
           </div>
         </div>
-        <br />
       </div>
     </div>
   );
