@@ -1,6 +1,8 @@
 import { useState } from "react";
+import PropTypes from 'prop-types'; 
 
 import MusicPlatformLinks from "./platform-links";
+
 
 const Disc = (props) => {
   const [expanded, setExpanded] = useState(-1);
@@ -12,6 +14,12 @@ const Disc = (props) => {
       setExpanded(i);
     }
   };
+
+  Disc.propTypes = {
+    recordType: PropTypes.string.isRequired,
+    artwork: PropTypes.object.isRequired,
+    title: PropTypes.string.isRequired
+  }
 
   return (
     <div
@@ -35,8 +43,9 @@ const Disc = (props) => {
         />
         <img height={"300px"} width={"300px"} src={props.artwork} alt={props.title} />
       </div>
-      <div className="flex flex-row w-[300px] flex-wrap text-center justify-center transition-scale duration-100 origin-top text-xl pt-2 scale-0 group-hover:scale-90">
-        {props.title}
+      <div className="flex flex-row w-[300px] flex-wrap text-center justify-center font-extrabold transition-scale duration-100 origin-top text-xl pt-2 scale-0 group-hover:scale-90">
+        {props.recordType === 'album' && `${props.title}`}
+        {!(props.recordType === 'album') && `${props.title + ' - ' + props.recordType}`}
       </div>
     </div>
   );
