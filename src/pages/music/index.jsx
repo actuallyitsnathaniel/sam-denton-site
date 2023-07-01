@@ -69,7 +69,7 @@ const Music = () => {
         <Discography.Disc
           recordType="single"
           artwork={iJustMight}
-          title="i just might. (with galaxy shores)"
+          title="i just might."
           spotifyLink="https://open.spotify.com/track/2qazwrjvUxVr8cRSUfDJJt?si=c9166f78e2df4ce6"
           appleMusicLink="https://music.apple.com/us/album/i-just-might/1472805738?i=1472805927"
           tidalLink="https://tidal.com/browse/track/246002376"
