@@ -27,7 +27,7 @@ export default defineConfig({
                 removeViewBox: false, // https://github.com/svg/svgo/issues/1128
               },
               cleanupIDs: {
-                minify: false,
+                minify: true,
                 remove: false,
               },
               convertPathData: false,
@@ -44,19 +44,19 @@ export default defineConfig({
       },
       png: {
         // https://sharp.pixelplumbing.com/api-output#png
-        quality: 75,
+        quality: 66,
       },
       jpeg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 75,
+        quality: 66,
       },
       jpg: {
         // https://sharp.pixelplumbing.com/api-output#jpeg
-        quality: 75,
+        quality: 66,
       },
       tiff: {
         // https://sharp.pixelplumbing.com/api-output#tiff
-        quality: 75,
+        quality: 66,
       },
       // gif does not support lossless compression
       // https://sharp.pixelplumbing.com/api-output#gif
