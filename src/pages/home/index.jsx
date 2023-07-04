@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="grid text-white text-center place-content-around">
       <div className="grid grid-col text-center h-screen place-content-center">
-        <h2 className="text-9xl italic font-bold justify-center md:pt-20 pb-48">sam denton</h2>
+        <h2 className="text-7xl flex-wrap md:text-8xl italic font-bold justify-center md:pt-20 pb-48">sam denton</h2>
         
       </div>
       <p
