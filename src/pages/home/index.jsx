@@ -7,19 +7,19 @@ const Home = () => {
   const youtubeID = "utRdyc6biHQ";
 
   return (
-    <div className="grid text-white text-center place-content-around">
-      <div className="grid grid-col text-center h-screen place-content-center mt-0 sm:mt-20">
-        <img src={samFace} className="pb-10 md:pb-0"/>
-        <h2 className="text-7xl flex-wrap md:text-8xl italic font-bold justify-center pb-48">
+    <div className="grid text-white text-center">
+      <div className="grid h-screen justify-self-center">
+        <img src={samFace} className="h-3/5 md:h-5/6 md:pt-20 sm:my-auto" />
+        <h2 className="text-6xl flex-wrap italic font-bold hidden sm:block">
           sam denton
         </h2>
-      </div>
-      <p
+        <p
         rel="preload prefetch"
         className="grid absolute bottom-0 m-auto left-0 right-0 text-8xl py-2 animate-bounce"
       >
         ↡
       </p>
+      </div>
 
       <iframe
         height={"315px"}

@@ -66,7 +66,7 @@ export default {
           "90%": { transform: "translateX(20%)" },
           "100%": { transform: "translateX(30%)" },
         },
-        "bounce-x": {
+        bounceX: {
           "0%, 50%, 100%": {
             transform: "translateX(0)",
             animationTimingFunction: "cubic-bezier(0.8, 0, 1, 1)",
@@ -85,7 +85,7 @@ export default {
         grain: "grain 0.8s steps(1) infinite",
         scratch: "scratch 0.45s steps(1) infinite",
         innerScratch: "innerScratch 2s infinite",
-        "hint-scrollable": "bounce-x 1s ease-in-out",
+        "hint-scrollable": "bounceX 1s ease-in-out",
       },
     },
   },
