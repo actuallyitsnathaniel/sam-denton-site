@@ -15,7 +15,7 @@ const Home = () => {
         </h2>
         <p
         rel="preload prefetch"
-        className="grid absolute bottom-0 m-auto left-0 right-0 text-8xl py-2 animate-bounce"
+        className="grid absolute bottom-0 m-auto left-0 right-0 text-5xl py-2 animate-bounce"
       >
         ↡
       </p>
