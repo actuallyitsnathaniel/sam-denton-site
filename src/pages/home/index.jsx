@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <div className="grid text-white text-center">
       <div className="grid h-screen justify-self-center">
-        <SamFace className="h-3/5 md:h-5/6 md:pt-20 sm:my-auto" />
+      <SamFace className="sm:my-auto"/>
         <h2 className="text-6xl flex-wrap italic font-bold hidden sm:block">
           sam denton
         </h2>

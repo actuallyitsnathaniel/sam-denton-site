@@ -24,8 +24,9 @@ function App() {
       <FilmGrainEffect />
       <Suspense fallback={<div>loading...</div>}>
         <VideoBackground />
-        <div className="flex flex-col h-screen w-screen justify-between [&>*]:animate-appear">
+        <div className="flex flex-col h-screen w-auto [&>*]:animate-appear">
           <NavBar />
+          <div className="md:pt-20"/>
           <Routes>
             <Route index element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home />} />
