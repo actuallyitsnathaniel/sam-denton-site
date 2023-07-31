@@ -23,7 +23,7 @@ function App() {
     <BrowserRouter forceRefresh>
       <FilmGrainEffect />
       <Suspense fallback={<div>loading...</div>}>
-        <VideoBackground />
+        <VideoBackground className="animate-appear"/>
         <div className="flex flex-col h-screen w-auto [&>*]:animate-appear">
           <NavBar />
           <div className="md:pt-20"/>

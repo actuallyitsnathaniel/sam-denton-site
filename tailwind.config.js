@@ -90,7 +90,7 @@ export default {
         scratch: "scratch 0.45s steps(1) infinite",
         innerScratch: "innerScratch 2s infinite",
         "hint-scrollable": "bounceX 1s ease-in-out",
-        appear: "appear .35s ease-in"
+        appear: "appear .35s ease-in-out"
       },
     },
   },
