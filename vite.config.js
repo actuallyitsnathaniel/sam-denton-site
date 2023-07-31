@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import svgr from "vite-plugin-svgr";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-import preload from "vite-plugin-preload";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -70,7 +69,6 @@ export default defineConfig({
         lossless: true,
       },
     }),
-    preload(),
   ],
   build: {
     commonjsOptions: {
