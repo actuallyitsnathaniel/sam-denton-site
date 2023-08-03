@@ -26,7 +26,7 @@ function App() {
         <VideoBackground className="animate-appear"/>
         <div className="flex flex-col h-screen w-auto [&>*]:animate-appear">
           <NavBar />
-          <div className="md:pt-20"/>
+          <div className="md:pt-10"/>
           <Routes>
             <Route index element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home />} />
