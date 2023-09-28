@@ -1,5 +1,5 @@
 .video {
- filter: brightness(0.50) blur(10px) sepia(0.5);
+ filter: brightness(0.50) blur(10px);
  /* The min width had to be set for both */
  min-width: 100%;
  width: 100%;
