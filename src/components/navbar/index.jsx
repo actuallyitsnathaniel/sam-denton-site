@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 
-import { ReactComponent as HamburgerIcon } from "../../assets/images/icons/navbar/hamburger-icon.svg";
-import { ReactComponent as CloseIcon } from "../../assets/images/icons/navbar/close-icon.svg";
+import HamburgerIcon from "../../assets/images/icons/navbar/hamburger-icon.svg";
+import CloseIcon from "../../assets/images/icons/navbar/close-icon.svg";
 
 // https://tailwindcss.com/blog/utility-friendly-transitions-with-tailwindui-react
 
@@ -31,7 +31,7 @@ const usePageTitle = (location) => {
   }, [location]);
 
   return pageTitle;
-}
+};
 
 const NavBar = () => {
   const [expanded, setExpanded] = useState(false);
@@ -68,7 +68,7 @@ const NavBar = () => {
             setExpanded(!expanded);
           }}
         >
-          {expanded ? <CloseIcon /> : <HamburgerIcon />}
+          {expanded ? <img src={CloseIcon} /> : <img src={HamburgerIcon} />}
         </button>
       </div>
       <div
@@ -137,6 +137,6 @@ const NavBar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default NavBar;
