@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 
 import HamburgerIcon from "../../assets/images/icons/navbar/hamburger-icon.svg";
 import CloseIcon from "../../assets/images/icons/navbar/close-icon.svg";
+import NavItem from "./nav-item";
 
 // https://tailwindcss.com/blog/utility-friendly-transitions-with-tailwindui-react
 
@@ -40,7 +41,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`text-white p-2.5 font-semibold drop-shadow-xl ${
+      className={`text-black p-2.5 font-semibold ${
         pageTitle.includes("links") ? "hidden" : ""
       }`}
     >
@@ -78,34 +79,17 @@ const NavBar = () => {
       `}
       >
         <ul id="nav-bar" className={`nav-bar`}>
-          <Link
-            className={`nav-item ${
-              pageTitle === "home" ? "nav-item-active" : ""
-            }`}
-            to="/home"
-            aria-current="page"
-            onClick={() => setExpanded(false)}
-          >
-            home
-          </Link>
-          <Link
-            className={`nav-item ${
-              pageTitle === "music" ? "nav-item-active" : ""
-            }`}
-            to="/music"
-            onClick={() => setExpanded(false)}
-          >
-            music
-          </Link>
-          <Link
-            className={`nav-item ${
-              pageTitle === "about" ? "nav-item-active" : ""
-            }`}
-            to="/about"
-            onClick={() => setExpanded(false)}
-          >
-            about
-          </Link>
+          <NavItem to={"/home"} text={"home"} {...{ pageTitle, setExpanded }} />
+          <NavItem
+            to={"/music"}
+            text={"music"}
+            {...{ pageTitle, setExpanded }}
+          />
+          <NavItem
+            to={"/about"}
+            text={"about"}
+            {...{ pageTitle, setExpanded }}
+          />
           {/**  <Link
             className={`nav-item ${
               pageTitle === "merch" ? "nav-item-active" : ""

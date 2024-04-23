@@ -82,15 +82,15 @@ export default {
         },
         appear: {
           "0%": { filter: "opacity(0.0)" },
-          "100%": {filter: "opacity(1)"}
-        }
+          "100%": { filter: "opacity(1)" },
+        },
       },
       animation: {
         grain: "grain 0.8s steps(1) infinite",
         scratch: "scratch 0.45s steps(1) infinite",
         innerScratch: "innerScratch 2s infinite",
         "hint-scrollable": "bounceX 1s ease-in-out",
-        appear: "appear .35s ease-in-out"
+        appear: "appear .35s ease-in-out",
       },
     },
   },

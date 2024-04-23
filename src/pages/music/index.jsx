@@ -17,7 +17,7 @@ import dreams from "../../assets/images/discography/Singles_EPs/dreams_600x600bb
 const Music = () => {
   // TODO: work with sam to get music uploaded to youtube
   return (
-    <div className="flex flex-wrap mt-16 justify-center text-white">
+    <div className="flex flex-wrap mt-16 justify-center text-black">
       <Discography>
         {/** Albums */}
 

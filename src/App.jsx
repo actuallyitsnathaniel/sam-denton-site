@@ -1,8 +1,6 @@
-import React, { Suspense } from "react";
+import React from "react";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
-import VideoBackground from "./components/video-background";
-import FilmGrainEffect from "./components/film-grain-effect";
 import { SocialLinks } from "./components/social-links";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
@@ -18,33 +16,29 @@ import Shows from "./pages/shows";
 import Secret from "./pages/secret";
 import ErrorPage from "./pages/error";
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter forceRefresh>
-      <FilmGrainEffect />
-      <Suspense fallback={<div>loading...</div>}>
-        <VideoBackground className="animate-appear"/>
-        <div className="flex flex-col h-screen w-auto [&>*]:animate-appear">
-          <NavBar />
-          <div className="md:pt-10"/>
-          <Routes>
-            <Route index element={<Navigate replace to="/home" />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/links" element={<Links />} />
-            <Route path="/merch" element={<Merch />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/shows" element={<Shows />} />
-            <Route path="/secret" element={<Secret />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
-          <SocialLinks />
-          <Footer />
-        </div>
-      </Suspense>
+      <div className="flex flex-col min-h-screen h-screen overflow-scroll w-auto [&>*]:animate-appear bg-[url('./src/assets/textures/paper-1.png')] bg-cover bg-repeat-y bg-blend-overlay text-black">
+        <NavBar />
+        <div className="md:pt-10" />
+        <Routes>
+          <Route index element={<Navigate replace to="/home" />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/links" element={<Links />} />
+          <Route path="/merch" element={<Merch />} />
+          <Route path="/music" element={<Music />} />
+          <Route path="/shows" element={<Shows />} />
+          <Route path="/secret" element={<Secret />} />
+          <Route path="*" element={<ErrorPage />} />
+        </Routes>
+        <SocialLinks />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

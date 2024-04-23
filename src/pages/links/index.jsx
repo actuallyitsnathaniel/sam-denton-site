@@ -9,11 +9,11 @@ import YoutubeLogo from "../../components/social-links/youtube-link";
 
 const Links = () => {
   return (
-    <div className="text-center text-white justify-between">
-      <Link exact='true' to={"/home"}>
-      <div className="mx-auto pt-16">
-       <h1 className="text-9xl">SAM DENTON</h1>
-      </div>
+    <div className="text-center text-black justify-between">
+      <Link exact="true" to={"/home"}>
+        <div className="mx-auto pt-16">
+          <h1 className="text-9xl">SAM DENTON</h1>
+        </div>
       </Link>
       <h1 className="text-[200%] md:text-6xl py-6 font-semibold italic">
         links
@@ -23,7 +23,7 @@ const Links = () => {
           <SpotifyLink />
         </div>
         <div className="px-6">
-          <AppleMusic /> 
+          <AppleMusic />
         </div>
         <div className="px-6">
           <YoutubeLogo />
@@ -34,9 +34,9 @@ const Links = () => {
         <div className="px-6">
           <GmailLogo />
         </div>
-      </div>   
+      </div>
     </div>
   );
-}
+};
 
 export default Links;

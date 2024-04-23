@@ -3,21 +3,18 @@ import React from "react";
 import { MusicLinks } from "../../components/music-embeds";
 import SamFace from "../../assets/images/profiles/sam-face.jsx";
 
-const Home = () => {
+const OldHome = () => {
   const youtubeID = "utRdyc6biHQ";
-
   return (
-    <div className="grid text-white text-center">
+    <div className="grid text-black text-center bg-black">
       <div className="grid h-screen justify-self-center">
-      <SamFace className="sm:my-auto pt-0"/>
+        <SamFace className="sm:my-auto pt-0" />
         <h2 className="text-6xl flex-wrap italic font-bold hidden sm:block">
           sam denton
         </h2>
-        <p
-        className="grid absolute bottom-0 m-auto left-0 right-0 text-5xl py-2 animate-bounce"
-      >
-        ↡
-      </p>
+        <p className="grid absolute bottom-0 m-auto left-0 right-0 text-5xl py-2 animate-bounce">
+          ↡
+        </p>
       </div>
 
       <iframe
@@ -28,9 +25,15 @@ const Home = () => {
         allowFullScreen
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
       />
-      <div>
-        <MusicLinks />
-      </div>
+      <MusicLinks />
+    </div>
+  );
+};
+
+const Home = () => {
+  return (
+    <div className="min-h-screen h-auto">
+      <h1>Sam Denton</h1>
     </div>
   );
 };
