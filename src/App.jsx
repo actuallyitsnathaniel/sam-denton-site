@@ -17,9 +17,10 @@ import Secret from "./pages/secret";
 import ErrorPage from "./pages/error";
 
 const App = () => {
+  // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
   return (
     <BrowserRouter forceRefresh>
-      <div className="flex flex-col min-h-screen h-screen overflow-scroll w-auto [&>*]:animate-appear bg-[url('./src/assets/textures/paper-1.png')] bg-cover bg-repeat-y bg-blend-overlay text-black">
+      <div className="font-serif flex flex-col min-h-screen w-auto [&>*]:animate-appear bg-[url('./src/assets/textures/paper-1.png')] bg-repeat-y bg-yellow-100 bg-opacity-20 bg-cover text-black blur-[0.39px]">
         <NavBar />
         <div className="md:pt-10" />
         <Routes>
