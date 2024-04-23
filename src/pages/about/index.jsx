@@ -3,7 +3,7 @@ import profile1 from "../../assets/images/profiles/profile-1.jpg";
 
 const About = () => {
   return (
-    <div className="md:flex md:flex-wrap -mt-10 md:mt-0 md:py-14 px-5 justify-between text-2xl text-black">
+    <div className="md:flex md:flex-wrap md:py-14 px-5 justify-between text-2xl text-black">
       <div className="md:flex md:flex-wrap pt-8 mix-blend-hard-light">
         <div className="flex flex-wrap md:justify-between">
           <div className="lg:px-5 pb-10 lg:pb-0 text-justify lg:w-1/2 md:text-3xl first-line:italic">

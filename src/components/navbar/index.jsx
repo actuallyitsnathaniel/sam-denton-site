@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 
-import HamburgerIcon from "../../assets/images/icons/navbar/hamburger-icon.svg";
-import CloseIcon from "../../assets/images/icons/navbar/close-icon.svg";
+import { MobileNavButton } from "./mobile-nav-button";
 import NavItem from "./nav-item";
 
 // https://tailwindcss.com/blog/utility-friendly-transitions-with-tailwindui-react
@@ -13,12 +12,10 @@ const usePageTitle = (location) => {
   useEffect(() => {
     const titleMap = [
       { path: "/", title: "home" },
-      { path: "/home", title: "home" },
-      { path: "/home/", title: "home" },
       { path: "/about", title: "about" },
       { path: "/contact", title: "contact" },
       { path: "/music", title: "music" },
-      { path: "/merch", title: "merch" },
+      { path: "/digitals", title: "digitals" },
       { path: "/shows", title: "shows" },
       { path: "/secret", title: "secret" },
       { path: "/links", title: "links" },
@@ -41,87 +38,72 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`text-black p-2.5 font-semibold ${
-        pageTitle.includes("links") ? "hidden" : ""
+      className={`z-[1] text-black fixed top-0 w-screen py-1 bg-none ${
+        expanded && "h-screen bg-black bg-opacity-75"
       }`}
     >
-      <div className="flex justify-between">
-        <a
-          id="home-icon"
-          href="/home"
-          className={`md:hidden ${
-            pageTitle.includes("home") && "pointer-events-none opacity-0"
-          } p-3.5 text-6xl -translate-y-1 align-middle`}
-        >
-          ⌂
-        </a>
-        <div className="md:hidden p-5 justify-center text-5xl whitespace-nowrap">
+      <div className="absolute flex font-semibold mx-auto w-full justify-center">
+        <div className="md:hidden p-5 justify-center text-4xl whitespace-nowrap underline">
           {pageTitle}
         </div>
-        <button
+        <div
           data-collapse-toggle="navbar"
           id="navbar-icon"
           type="button"
-          className={`md:hidden p-3 justify-end`}
+          className={`md:hidden justify-end`}
           aria-controls="navbar"
           aria-expanded="false"
           onClick={() => {
             setExpanded(!expanded);
           }}
         >
-          {expanded ? <img src={CloseIcon} /> : <img src={HamburgerIcon} />}
-        </button>
+          <MobileNavButton {...{ expanded, setExpanded }} />
+        </div>
       </div>
-      <div
-        id="nav-wrapper"
-        className={`transition-all h-0 origin-top duration-100 md:block
-      ${expanded ? "scale-100 h-full" : "scale-0"} md:scale-100 
-      `}
+      <ul
+        id="nav-bar"
+        className={`origin-top mt-20 md:mt-auto md:scale-100 md:justify-end ${
+          expanded ? "scale-100" : "scale-0"
+        } w-screen h-4/5 transition-all duration-100 absolute flex flex-col 
+        mx-auto ease-in-out justify-around md:h-auto font-semibold 
+        md:flex-row items-center text-2xl whitespace-nowrap`}
       >
-        <ul
-          id="nav-bar"
-          className={`transition-all duration-100 ease-in-out flex flex-col md:flex-row items-center justify-between md:mx-14 my-3 text-3xl whitespace-nowrap`}
-        >
-          <NavItem to={"/home"} text={"home"} {...{ pageTitle, setExpanded }} />
-          <NavItem
-            to={"/music"}
-            text={"music"}
-            {...{ pageTitle, setExpanded }}
-          />
-          <NavItem
-            to={"/about"}
-            text={"about"}
-            {...{ pageTitle, setExpanded }}
-          />
-          {/**  <Link
-            className={`nav-item ${
-              pageTitle === "merch" ? "nav-item-active" : ""
-            }`}
-            to="/merch"
-            onClick={() => setExpanded(false)}
-          >
-            merch
-          </Link> */}
-          {/** <Link
-            className={`nav-item ${
-              pageTitle === "links" ? "nav-item-active" : ""
-            }`}
+        <NavItem
+          to="/"
+          text={"home"}
+          setExpanded={setExpanded}
+          {...{ pageTitle }}
+        />
+        <NavItem
+          to="/about"
+          text={"about"}
+          setExpanded={setExpanded}
+          {...{ pageTitle }}
+        />
+        <NavItem
+          to="/music"
+          text={"music"}
+          setExpanded={setExpanded}
+          {...{ pageTitle }}
+        />
+        <NavItem
+          to="/digitals"
+          text={"digitals"}
+          setExpanded={setExpanded}
+          {...{ pageTitle }}
+        />
+        {/** <NavItem
             to="/links"
-            onClick={() => setExpanded(false)}
-          >
-            contact & links
-          </Link> */}
-          <Link
-            className={`hidden nav-item ${
-              pageTitle === "shows" ? "nav-item-active" : ""
-            }`}
-            to="/shows"
-            onClick={() => setExpanded(false)}
-          >
-            shows
-          </Link>
-        </ul>
-      </div>
+            label={"contact & links"}
+            setExpanded={setExpanded}
+            {...{ pageTitle }} */}
+        {/* <NavItem
+          to="/shows"
+          label={"shows"}
+          setExpanded={setExpanded}
+          {...{ pageTitle }}
+        /> */}
+      </ul>
     </nav>
   );
 };

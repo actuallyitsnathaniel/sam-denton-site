@@ -20,9 +20,9 @@ const App = () => {
   // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
   return (
     <BrowserRouter forceRefresh>
-      <div className="font-serif flex flex-col min-h-screen w-auto [&>*]:animate-appear bg-[url('./src/assets/textures/paper-1.png')] bg-repeat-y bg-yellow-100 bg-opacity-20 bg-cover text-black blur-[0.39px]">
+      <div className="font-serif flex flex-col min-h-screen w-auto [&>*]:animate-appear bg-[url('./src/assets/textures/paper-1.png')] bg-repeat-y bg-yellow-300 bg-opacity-10 bg-cover text-black blur-[0.46px]">
         <NavBar />
-        <div className="md:pt-10" />
+        <div className="pt-10" />
         <Routes>
           <Route index element={<Navigate replace to="/home" />} />
           <Route path="/home" element={<Home />} />
