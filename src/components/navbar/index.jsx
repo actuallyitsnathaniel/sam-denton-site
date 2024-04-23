@@ -78,7 +78,10 @@ const NavBar = () => {
       ${expanded ? "scale-100 h-full" : "scale-0"} md:scale-100 
       `}
       >
-        <ul id="nav-bar" className={`nav-bar`}>
+        <ul
+          id="nav-bar"
+          className={`transition-all duration-100 ease-in-out flex flex-col md:flex-row items-center justify-between md:mx-14 my-3 text-3xl whitespace-nowrap`}
+        >
           <NavItem to={"/home"} text={"home"} {...{ pageTitle, setExpanded }} />
           <NavItem
             to={"/music"}
