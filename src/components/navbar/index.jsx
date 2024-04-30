@@ -38,7 +38,7 @@ const NavBar = () => {
 
   return (
     <nav
-      className={`z-[1] text-black fixed top-0 w-screen py-1 bg-none ${
+      className={`z-[1] text-black fixed top-0 w-screen bg-none ${
         expanded && "h-screen bg-black bg-opacity-75"
       }`}
     >

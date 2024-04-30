@@ -1,17 +1,14 @@
-import InstagramSVG from "../../../assets/images/icons/instagram-logo.svg";
+import instagramStamp from "../../../assets/images/icons/igstamp.png";
 
 const InstagramLogo = () => {
   return (
     <a
-      className="transition-all duration-100 p-2 md:hover:-translate-y-0 translate-y-3"
+      className="transition-all duration-100 md:hover:-translate-y-2"
       href="https://instagram.com/samdenton"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src={InstagramSVG}
-        className="transition-all duration-75 h-14 hover:scale-110"
-      />
+      <img src={instagramStamp} className="h-16" />
     </a>
   );
 };

@@ -1,11 +1,14 @@
 import React from "react";
 
-import { MusicLinks } from "../../components/music-embeds";
+// import { MusicLinks } from "../../components/music-embeds";
+import samDentonLogo from "../../assets/images/samdentonstamplogo.png";
 
 const Home = () => {
   return (
-    <div className="flex min-h-[720px] justify-center items-center">
-      <h1 className="justify-center">Sam Denton</h1>
+    <div className="h-screen flex justify-center items-center">
+      <h1 className="flex justify-center items-center">
+        <img src={samDentonLogo} className="max-h-72 self-center" />
+      </h1>
     </div>
   );
 };

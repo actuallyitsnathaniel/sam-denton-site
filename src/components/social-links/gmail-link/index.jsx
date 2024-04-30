@@ -1,16 +1,15 @@
-import GmailColor from "../../../assets/images/icons/gmail-color.svg";
+import gmailStamp from "../../../assets/images/icons/gmailstamp.png";
 
 const GmailLogo = () => {
   return (
     <a
-      className="transition-all duration-100 p-2 md:hover:-translate-y-2 group"
       href="mailto:samdentonmusic@gmail.com"
       target="_blank"
       rel="noopener noreferrer"
     >
       <img
-        src={GmailColor}
-        className="saturate-0 group-hover:saturate-100 contrast-[150%] to-black hover:contrast-100 transition ease-in-out duration-100 hover:scale-110"
+        src={gmailStamp}
+        className="h-16 transition ease-in-out duration-100 hover:scale-110"
       />
     </a>
   );

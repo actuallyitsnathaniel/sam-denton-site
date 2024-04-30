@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="text-md bg-transparent text-black text-center md:text-right p-3 py-7">
+    <footer className="md:fixed md:bottom-0 md:right-0 bottom-auto text-md bg-transparent text-black text-center md:text-right p-4">
       <p>
         copyright © {new Date().getFullYear()} — sam denton. powered by{" "}
         <a

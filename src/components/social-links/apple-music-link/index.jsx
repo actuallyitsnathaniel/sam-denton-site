@@ -1,18 +1,14 @@
-import AppleMusicSVG from "../../../assets/images/icons/music-platforms/apple-music.svg";
+import appleMusicStamp from "../../../assets/images/icons/applemusicstamp.png";
 
 const AppleMusicLink = () => {
   return (
     <a
-      className="transition-all duration-100 p-2 md:hover:-translate-y-0 translate-y-3"
+      className="transition-all duration-100 md:hover:-translate-y-2"
       href="https://music.apple.com/us/artist/sam-denton/797065959"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img
-        src={AppleMusicSVG}
-        className="transition-all duration-75 my-auto rounded-[9px] hover:scale-110 hover:bg-gradient-to-b from-[#fa57c1] via-[#b166cc] to-[#69a6f9]"
-        alt="apple-music-alt"
-      />
+      <img src={appleMusicStamp} className="h-16" alt="apple-music-alt" />
     </a>
   );
 };
