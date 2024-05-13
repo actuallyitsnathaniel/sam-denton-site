@@ -21,7 +21,7 @@ const App = () => {
   return (
     <BrowserRouter forceRefresh>
       <div
-        className={`font-serif flex flex-col min-h-screen w-auto overflow-visible
+        className={`font-serif flex flex-col min-h-screen w-auto overflow-hidden
       [&>*]:animate-appear bg-cover bg-[url('./src/assets/textures/paper-1.png')] 
       bg-repeat bg-yellow-300 bg-opacity-10 text-black blur-[0.46px]
       `}
@@ -33,7 +33,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/links" element={<Links />} />
-          <Route path="/merch" element={<Merch />} />
+          <Route path="/digitals" element={<Merch />} />
           <Route path="/music" element={<Music />} />
           <Route path="/shows" element={<Shows />} />
           <Route path="/secret" element={<Secret />} />

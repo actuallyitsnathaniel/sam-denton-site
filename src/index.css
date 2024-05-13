@@ -47,3 +47,8 @@ code {
   filter: invert(1) hue-rotate(0.5) contrast(0.4);
   background: url("./assets/images/background/grain.jpg") repeat center center;
 }
+
+/* DEBUG */
+/* * {
+  outline: 1px solid #f00 !important;
+} */
