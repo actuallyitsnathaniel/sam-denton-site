@@ -15,6 +15,7 @@ import iJustMight from "../../assets/images/discography/Singles_EPs/i_just_might
 import first from "../../assets/images/discography/Singles_EPs/first_600x600bb.jpeg";
 import better from "../../assets/images/discography/Singles_EPs/better_2021_single_600x600bb.jpeg";
 import dreams from "../../assets/images/discography/Singles_EPs/dreams_600x600bb.jpeg";
+import goneTooHeart from "../../assets/images/discography/Singles_EPs/gonetoo_heart.jpg";
 
 const Music = () => {
   // TODO: work with sam to get music uploaded to youtube
@@ -32,11 +33,18 @@ const Music = () => {
           }
           appleMusicLink={"https://music.apple.com/ph/album/for-now/1476295406"}
           tidalLink={"https://tidal.com/browse/album/245469084"}
-          // soundcloudLink={""}
-          // youtubeLink={""}
         />
 
         {/** Singles / EPs */}
+        <Discography.Disc
+          recordType="single"
+          artwork={goneTooHeart}
+          title={"..."}
+          spotifyLink={""}
+          appleMusicLink={""}
+          tidalLink={""}
+          className={"blur"}
+        />
         <Discography.Disc
           recordType="single"
           artwork={dreams}
