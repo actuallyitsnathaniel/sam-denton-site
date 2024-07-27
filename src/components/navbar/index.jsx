@@ -1,21 +1,22 @@
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-import { MobileNavButton } from "./mobile-nav-button";
-import NavItem from "./nav-item";
+import { DesktopNav } from "./desktop/desktop-nav";
+import { MobileNav } from "./mobile/mobile-nav";
 
 // https://tailwindcss.com/blog/utility-friendly-transitions-with-tailwindui-react
 
-const usePageTitle = (location) => {
+export const usePageTitle = (location) => {
   const [pageTitle, setPageTitle] = useState("");
 
   useEffect(() => {
     const titleMap = [
       { path: "/", title: "home" },
+      { path: "/home", title: "home" },
       { path: "/about", title: "about" },
       { path: "/contact", title: "contact" },
       { path: "/music", title: "music" },
-      { path: "/digitals", title: "digitals" },
+      { path: "/merch", title: "merch" },
       { path: "/shows", title: "shows" },
       { path: "/secret", title: "secret" },
       { path: "/links", title: "links" },
@@ -31,69 +32,34 @@ const usePageTitle = (location) => {
   return pageTitle;
 };
 
-const NavBar = () => {
+const NavBar = ({ setModalOpen }) => {
+  const [windowDimension, setWindowDimension] = useState(null);
   const [expanded, setExpanded] = useState(false);
+  const isMobile = windowDimension <= 822; // custom width for custom navbar
+
+  useEffect(() => {
+    setWindowDimension(window.innerWidth);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowDimension(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   let pageTitle = usePageTitle(useLocation().pathname);
 
-  return (
-    <nav
-      className={`z-[1] text-black fixed top-0 w-screen bg-none ${
-        expanded && "h-screen bg-black bg-opacity-75 text-white"
-      }`}
-    >
-      <div className="absolute flex font-semibold mx-auto w-full justify-center">
-        <div className="md:hidden p-5 justify-center text-4xl whitespace-nowrap underline">
-          {pageTitle}
-        </div>
-        <div
-          data-collapse-toggle="navbar"
-          id="navbar-icon"
-          type="button"
-          className={`md:hidden justify-end`}
-          aria-controls="navbar"
-          aria-expanded="false"
-          onClick={() => {
-            setExpanded(!expanded);
-          }}
-        >
-          <MobileNavButton {...{ expanded, setExpanded }} />
-        </div>
-      </div>
-      <ul
-        id="nav-bar"
-        className={`origin-top mt-20 md:mt-auto md:scale-100 md:justify-end ${
-          expanded ? "scale-100" : "scale-0"
-        } w-screen h-4/5 transition-all duration-100 absolute flex flex-col 
-        mx-auto ease-in-out justify-around md:h-auto font-semibold 
-        md:flex-row items-center text-2xl whitespace-nowrap`}
-      >
-        <NavItem
-          to="/"
-          text={"home"}
-          setExpanded={setExpanded}
-          {...{ pageTitle }}
-        />
-        <NavItem
-          to="/about"
-          text={"about"}
-          setExpanded={setExpanded}
-          {...{ pageTitle }}
-        />
-        <NavItem
-          to="/music"
-          text={"music"}
-          setExpanded={setExpanded}
-          {...{ pageTitle }}
-        />
-        <NavItem
-          to="/digitals"
-          text={"digitals"}
-          setExpanded={setExpanded}
-          {...{ pageTitle }}
-        />
-      </ul>
-    </nav>
+  return isMobile ? (
+    <MobileNav
+      {...{ expanded, setExpanded, isMobile, pageTitle, setModalOpen }}
+    />
+  ) : (
+    <DesktopNav
+      {...{ expanded, setExpanded, isMobile, pageTitle, setModalOpen }}
+    />
   );
 };
 

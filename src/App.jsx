@@ -21,27 +21,25 @@ const App = () => {
   // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
   return (
     <BrowserRouter forceRefresh>
-      <div
-        className={`font-serif flex flex-col min-h-screen w-auto overflow-hidden
- bg-opacity-10 bg-black text-black blur-[0.46px]
-      `}
-      >
+      <div className={`flex flex-col min-h-screen max-w-screen font-serif`}>
         <ImageBackground />
 
         <AnimatePresence mode="popLayout">
           <NavBar />
-          <Routes key={location.pathname}>
-            <Route index element={<Navigate replace to="/home" />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/links" element={<Links />} />
-            <Route path="/digitals" element={<Merch />} />
-            <Route path="/music" element={<Music />} />
-            <Route path="/shows" element={<Shows />} />
-            <Route path="/secret" element={<Secret />} />
-            <Route path="*" element={<ErrorPage />} />
-          </Routes>
+          <div className="ml-28">
+            <Routes key={location.pathname}>
+              <Route index element={<Navigate replace to="/home" />} />
+              <Route path="/home" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/links" element={<Links />} />
+              <Route path="/digitals" element={<Merch />} />
+              <Route path="/music" element={<Music />} />
+              <Route path="/shows" element={<Shows />} />
+              <Route path="/secret" element={<Secret />} />
+              <Route path="*" element={<ErrorPage />} />
+            </Routes>
+          </div>
           <SocialLinks />
         </AnimatePresence>
         <Footer />

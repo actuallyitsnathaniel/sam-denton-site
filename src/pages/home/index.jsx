@@ -9,10 +9,14 @@ import samDentonLogo from "../../assets/images/samdentonstamplogo.png";
 
 const Home = () => {
   return (
-    <div className="h-screen flex justify-center items-center">
-      <h1 className="flex justify-center items-center">
-        <img src={samDentonLogo} className="max-h-72 self-center" />
-      </h1>
+    <div className="fixed w-screen flex flex-col justify-stretch items-center">
+      <div className="flex flex-grow"></div>
+      <img src={samDentonLogo} className="max-h-72 -translate-x-28" />
+      <div className="flex-col text-center text-white" hidden>
+        <h1 className="p-3 text-[150%] md:text-5xl  whitespace-nowrap">
+          Upcoming Shows
+        </h1>
+      </div>
     </div>
   );
 };
