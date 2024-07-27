@@ -1,4 +1,5 @@
 import React from "react";
+import pageTransition from "../../utils/pageTransition";
 
 const Secret = () => {
   return (
@@ -8,4 +9,4 @@ const Secret = () => {
   );
 };
 
-export default Secret;
+export default pageTransition(Secret);

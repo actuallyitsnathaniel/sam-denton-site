@@ -1,5 +1,22 @@
-import BGVideoMP4 from "../../assets/videos/bty-30sec.mp4";
-import BGVideoWEBM from "../../assets/videos/bty-30sec.webm";
+import paperBG from "../../assets/textures/paper-1.png";
+import clsx from "clsx";
+
+export const ImageBackground = () => {
+  return (
+    <img
+      className={clsx(
+        "fixed flex min-w-full w-full h-full",
+        "z-[-1] bg-orange-100 bg-blend-soft-light",
+        "object-cover scale-110 overflow-clip"
+      )}
+      height={"110%"}
+      width={"auto"}
+      id="image-bg"
+      loading="eager"
+      src={paperBG}
+    />
+  );
+};
 
 const VideoBackground = () => {
   return (

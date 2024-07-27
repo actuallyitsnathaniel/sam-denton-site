@@ -16,6 +16,7 @@ import Music from "./pages/music";
 import Shows from "./pages/shows";
 import Secret from "./pages/secret";
 import ErrorPage from "./pages/error";
+import { ImageBackground } from "./components/video-background";
 
 const App = () => {
   // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
@@ -23,12 +24,12 @@ const App = () => {
     <BrowserRouter forceRefresh>
       <div
         className={`font-serif flex flex-col min-h-screen w-auto overflow-hidden
-      [&>*]:animate-appear bg-cover bg-[url('./src/assets/textures/paper-1.png')] 
-      bg-repeat bg-yellow-300 bg-opacity-10 text-black blur-[0.46px]
+ bg-opacity-10 bg-black text-black blur-[0.46px]
       `}
       >
-        <AnimatePresence mode="wait">
-          <NavBar />
+        <ImageBackground />
+        <NavBar />
+        <AnimatePresence mode="popLayout">
           <Routes>
             <Route index element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home />} />

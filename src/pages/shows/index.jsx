@@ -1,4 +1,5 @@
 import React from "react";
+import pageTransition from "../../utils/pageTransition";
 
 const Shows = () => {
   return (
@@ -9,4 +10,4 @@ const Shows = () => {
   );
 };
 
-export default Shows;
+export default pageTransition(Shows);

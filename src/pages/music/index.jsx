@@ -1,4 +1,6 @@
 import React from "react";
+import pageTransition from "../../utils/pageTransition";
+
 import Discography from "../../components/discography";
 
 // albums
@@ -128,4 +130,4 @@ const Music = () => {
   );
 };
 
-export default Music;
+export default pageTransition(Music);
