@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import pageTransition from "../../utils/pageTransition";
 
 import InstagramLogo from "../../components/social-links/instagram-link";
 import GmailLogo from "../../components/social-links/gmail-link";
@@ -37,4 +38,4 @@ const Links = () => {
   );
 };
 
-export default Links;
+export default pageTransition(Links);

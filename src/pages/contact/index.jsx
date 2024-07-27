@@ -1,4 +1,5 @@
 import React from "react";
+import pageTransition from "../../utils/pageTransition";
 
 const Contact = () => {
   return (
@@ -8,4 +9,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default pageTransition(Contact);

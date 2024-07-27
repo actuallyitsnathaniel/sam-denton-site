@@ -1,5 +1,6 @@
 import React from "react";
 import profile1 from "../../assets/images/profiles/profile-1.jpg";
+import pageTransition from "../../utils/pageTransition";
 
 const About = () => {
   return (
@@ -30,4 +31,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default pageTransition(About);

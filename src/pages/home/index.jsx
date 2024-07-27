@@ -1,4 +1,5 @@
 import React from "react";
+import pageTransition from "../../utils/pageTransition";
 
 // import { MusicLinks } from "../../components/music-embeds";
 import samDentonLogo from "../../assets/images/samdentonstamplogo.png";
@@ -16,4 +17,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default pageTransition(Home);

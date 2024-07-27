@@ -4,6 +4,8 @@ import SoundXYZGallery from "../../components/sound-xyz";
 import React from "react";
 import { getSoundXYZSongs } from "../../api/getSoundXYZData";
 
+import pageTransition from "../../utils/pageTransition";
+
 const Merch = () => {
   const soundXyzReleases = getSoundXYZSongs;
 
@@ -29,4 +31,4 @@ const Merch = () => {
   );
 };
 
-export default Merch;
+export default pageTransition(Merch);

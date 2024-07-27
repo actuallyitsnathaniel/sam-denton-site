@@ -32,7 +32,6 @@ const SoundXYZGallery = ({ children }) => {
                p-5 content-between gap-10"
       >
         {React.Children.map(children, (child, i) => {
-          console.log(child);
           return React.cloneElement(child, { i });
         })}
       </div>

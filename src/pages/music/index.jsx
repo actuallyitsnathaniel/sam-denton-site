@@ -20,9 +20,9 @@ const Music = () => {
     <div className="flex flex-wrap mt-16 justify-center text-black">
       <Discography>
         {/** Albums */}
-
         <Discography.Disc
-          recordType={"album"}
+          album
+          recordType="album"
           artwork={forNow}
           title={"for now,"}
           spotifyLink={
@@ -35,7 +35,6 @@ const Music = () => {
         />
 
         {/** Singles / EPs */}
-
         <Discography.Disc
           recordType="single"
           artwork={dreams}
