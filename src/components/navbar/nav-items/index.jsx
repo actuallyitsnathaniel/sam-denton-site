@@ -19,7 +19,10 @@ export const NavItems = ({
       <button
         className={`flex transition ease-in-out p-4 px-4 duration-150
             hover:scale-110 cursor-pointer`}
-        onClick={() => setModalOpen(true)}
+        onClick={() =>
+          // setModalOpen(true);
+          alert("TODO: newsletter")
+        }
       >
         contact
       </button>
