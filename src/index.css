@@ -14,40 +14,6 @@ code {
     monospace;
 }
 
-.grain-background {
-  position: fixed;
-  height: 1600px;
-}
-
-.outer-scratch,
-.inner-scratch {
-  content: "";
-  width: 120%;
-  opacity: 0.7;
-  height: 100%;
-  position: fixed;
-  top: -5%;
-  left: -5%;
-  padding-left: 100px;
-  background: url("./assets/images/background/scratch.png") repeat center center;
-}
-
-.inner-scratch {
-  left: 30%;
-}
-
-.grain {
-  content: "";
-  scale: 2;
-  width: 110%;
-  height: 110%;
-  top: -5%;
-  left: -5%;
-  opacity: 0.11;
-  filter: invert(1) hue-rotate(0.5) contrast(0.4);
-  background: url("./assets/images/background/grain.jpg") repeat center center;
-}
-
 /* DEBUG */
 /* * {
   outline: 1px solid #f00 !important;

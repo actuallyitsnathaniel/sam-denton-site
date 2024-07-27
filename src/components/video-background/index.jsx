@@ -6,7 +6,7 @@ export const ImageBackground = () => {
     <img
       className={clsx(
         "fixed flex min-w-full w-full h-full",
-        "z-[-1] bg-orange-100 bg-blend-soft-light",
+        "z-[-1] bg-orange-100 saturate-[.75] bg-blend-soft-light",
         "object-cover scale-110 overflow-clip"
       )}
       height={"110%"}
@@ -21,16 +21,15 @@ export const ImageBackground = () => {
 const VideoBackground = () => {
   return (
     <video
-      height={"110%"}
-      width={"auto"}
+      height={"auto"}
+      width={"100%"}
       id="video"
-      rel="preload"
       autoPlay
       loop
       muted
       playsInline
       disablePictureInPicture
-      className="video"
+      className={`fixed transition-all duration-200 w-full h-full object-cover`}
     >
       <source src={BGVideoMP4} type="video/mp4" />
       <source src={BGVideoWEBM} type="video/webm" />

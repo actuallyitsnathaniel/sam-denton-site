@@ -1,12 +1,11 @@
 import React from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom";
 
 import { SocialLinks } from "./components/social-links";
 import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 
-import "./App.css";
 import Home from "./pages/home";
 import Contact from "./pages/contact";
 import About from "./pages/about";
