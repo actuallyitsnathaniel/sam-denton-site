@@ -5,7 +5,9 @@ export const MobileNavButton = (props) => {
       id="navbar-icon"
       type="button"
       className={`flex flex-col fixed top-3 right-3 m-4 
-      select-none duration-200 ${props.expanded && "translate-x-2.5"}`}
+      select-none duration-200 ${
+        props.expanded && "translate-x-2.5 stroke-white"
+      }`}
       aria-controls="navbar"
       aria-expanded="false"
       onClick={() => {
@@ -15,14 +17,14 @@ export const MobileNavButton = (props) => {
       <span
         className={`flex w-12 h-1 mb-2.5 relative bg-black rounded-sm 
         origin-top-left duration-200 ${
-          props.expanded ? "rotate-45" : "rotate-0"
+          props.expanded ? "rotate-45 bg-white" : "rotate-0"
         }`}
       />
       <span
         className={`flex w-12 h-1 mb-2.5 relative bg-black rounded-sm 
         origin-center duration-200 ${
           props.expanded
-            ? "rotate-180 opacity-0 scale-0"
+            ? "rotate-180 opacity-0 scale-0 bg-white"
             : "rotate-0 scale-100 opacity-100"
         }`}
       />
@@ -30,7 +32,7 @@ export const MobileNavButton = (props) => {
         className={`flex w-12 h-1 mb-2.5 relative bg-black rounded-sm 
         origin-bottom-left duration-200 ${
           props.expanded
-            ? "-rotate-45 translate-y-[5px]"
+            ? "-rotate-45 translate-y-[5px] bg-white"
             : "rotate-0 translate-y-0"
         }`}
       />

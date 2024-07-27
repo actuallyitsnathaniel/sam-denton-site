@@ -39,7 +39,7 @@ const NavBar = () => {
   return (
     <nav
       className={`z-[1] text-black fixed top-0 w-screen bg-none ${
-        expanded && "h-screen bg-black bg-opacity-75"
+        expanded && "h-screen bg-black bg-opacity-75 text-white"
       }`}
     >
       <div className="absolute flex font-semibold mx-auto w-full justify-center">
@@ -92,17 +92,6 @@ const NavBar = () => {
           setExpanded={setExpanded}
           {...{ pageTitle }}
         />
-        {/** <NavItem
-            to="/links"
-            label={"contact & links"}
-            setExpanded={setExpanded}
-            {...{ pageTitle }} */}
-        {/* <NavItem
-          to="/shows"
-          label={"shows"}
-          setExpanded={setExpanded}
-          {...{ pageTitle }}
-        /> */}
       </ul>
     </nav>
   );

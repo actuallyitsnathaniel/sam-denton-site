@@ -27,9 +27,10 @@ const App = () => {
       `}
       >
         <ImageBackground />
-        <NavBar />
+
         <AnimatePresence mode="popLayout">
-          <Routes>
+          <NavBar />
+          <Routes key={location.pathname}>
             <Route index element={<Navigate replace to="/home" />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
