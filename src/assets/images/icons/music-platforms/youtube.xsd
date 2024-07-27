@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="svg">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="path" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="d" use="required" />
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="height" use="required" />
+			<xs:attribute name="width" use="required" />
+			<xs:attribute name="className" use="required" />
+			<xs:attribute name="alt" use="required" />
+			<xs:attribute name="viewBox" use="required" />
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

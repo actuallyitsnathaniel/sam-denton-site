@@ -32,8 +32,8 @@ const Music = () => {
           }
           appleMusicLink={"https://music.apple.com/ph/album/for-now/1476295406"}
           tidalLink={"https://tidal.com/browse/album/245469084"}
-          soundcloudLink={""}
-          youtubeLink={""}
+          // soundcloudLink={""}
+          // youtubeLink={""}
         />
 
         {/** Singles / EPs */}
@@ -44,7 +44,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/5X0UGqgAEsG0YWGtkqtvBt?si=0a9f3e0664a54c9a"
           appleMusicLink="https://music.apple.com/us/album/dreams/1573467286?i=1573467301"
           tidalLink="https://tidal.com/browse/track/243956491"
-          soundcloudLink=""
+          // soundcloudLink=""
           youtubeLink="https://www.youtube.com/watch?v=lA42ghfjvCo"
         />
         <Discography.Disc
@@ -54,7 +54,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/52lu5hXrnYdWtPb90ImyA6?si=d8d3dedf5e23468b"
           appleMusicLink="https://music.apple.com/us/album/better/1556313448?i=1556313450"
           tidalLink="https://tidal.com/browse/track/244622029"
-          soundcloudLink=""
+          // soundcloudLink=""
           youtubeLink="https://www.youtube.com/watch?v=YkTWodHhM0o"
         />
         <Discography.Disc
@@ -64,7 +64,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/1w4i5qwiRwGOkbMxEBjfyJ?si=f040acca342a4e49"
           appleMusicLink="https://music.apple.com/us/album/first/1493852002?i=1493852052"
           tidalLink="https://tidal.com/browse/track/243488656"
-          soundcloudLink=""
+          // soundcloudLink=""
           youtubeLink="https://www.youtube.com/watch?v=0QWcpO3q1kA"
         />
         <Discography.Disc
@@ -74,7 +74,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/2qazwrjvUxVr8cRSUfDJJt?si=c9166f78e2df4ce6"
           appleMusicLink="https://music.apple.com/us/album/i-just-might/1472805738?i=1472805927"
           tidalLink="https://tidal.com/browse/track/246002376"
-          soundcloudLink=""
+          // soundcloudLink=""
           youtubeLink="https://www.youtube.com/watch?v=w1bNk5EvylU"
         />
         <Discography.Disc
@@ -84,7 +84,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/6hwmodBKdK50qtvvIPU2kT?si=6803c09fc91d47a5"
           appleMusicLink="https://music.apple.com/us/album/smoke-in-the-mirror-with-samiere/1466027622?i=1466027633"
           tidalLink="https://tidal.com/browse/track/245912176"
-          soundcloudLink=""
+          // soundcloudLink=""
           youtubeLink="https://www.youtube.com/watch?v=DiubEmfg1oM"
         />
         <Discography.Disc
@@ -94,7 +94,7 @@ const Music = () => {
           spotifyLink="https://open.spotify.com/track/0dhX55OSXJdHfqeNxt4jNg?si=723c5458a64b484d"
           appleMusicLink="https://music.apple.com/us/album/2-09/1451819059?i=1451819133"
           tidalLink={"https://tidal.com/browse/track/246154538"}
-          soundcloudLink={"https://on.soundcloud.com/b5Cqj"}
+          // soundcloudLink={"https://on.soundcloud.com/b5Cqj"}
           youtubeLink={"https://www.youtube.com/watch?v=LWqM12QvhXw"}
         />
         <Discography.Disc
@@ -108,7 +108,7 @@ const Music = () => {
             "https://music.apple.com/us/album/idkya/1442630949?i=1442631257"
           }
           tidalLink={"https://tidal.com/browse/track/243348992"}
-          soundcloudLink={"https://on.soundcloud.com/1eR4x"}
+          // soundcloudLink={"https://on.soundcloud.com/1eR4x"}
           youtubeLink={"https://www.youtube.com/watch?v=bUUB3sBHwyA"}
         />
         <Discography.Disc
@@ -122,7 +122,7 @@ const Music = () => {
             "https://music.apple.com/us/album/back-to-you-single/1437900119"
           }
           tidalLink={"https://tidal.com/browse/track/242202178"}
-          soundcloudLink={"https://on.soundcloud.com/XoZGT"}
+          // soundcloudLink={"https://on.soundcloud.com/XoZGT"}
           youtubeLink={"https://www.youtube.com/watch?v=5Cqq5n7153A"}
         />
       </Discography>
