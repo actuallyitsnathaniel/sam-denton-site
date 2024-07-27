@@ -26,7 +26,7 @@ const App = () => {
 
         <AnimatePresence mode="popLayout">
           <NavBar />
-          <div className="ml-28">
+          <div className="md:ml-28">
             <Routes key={location.pathname}>
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />
@@ -40,7 +40,6 @@ const App = () => {
               <Route path="*" element={<ErrorPage />} />
             </Routes>
           </div>
-          <SocialLinks />
         </AnimatePresence>
         <Footer />
       </div>

@@ -1,18 +1,28 @@
+import { SocialLinks } from "../social-links";
+
 const Footer = () => {
   return (
     <footer
-      className={`md:fixed md:bottom-1 md:right-0 bottom-auto text-md 
-    bg-transparent text-black text-center md:text-right p-4`}
+      id="footer"
+      className="grid text-md text-black w-full text-center pt-4 mt-auto bottom-0"
     >
-      <p>
-        copyright © {new Date().getFullYear()} — sam denton. powered by{" "}
-        <a
-          className="underline underline-offset-8"
-          href="mailto:nathanielrbowman@gmail.com"
-        >
-          nathaniel bowman
-        </a>
-      </p>
+      <div className="backdrop-blur-sm  bg-opacity-35 py-3">
+        <div className="sm:hidden flex justify-center">
+          <SocialLinks />
+        </div>
+        <p className="grid md:text-md">
+          Copyright © {new Date().getFullYear()} sam denton.
+          <p>
+            powered by&nbsp;
+            <a
+              className="underline underline-offset-8 "
+              href="mailto:nathanielrbowman@gmail.com"
+            >
+              nathaniel bowman
+            </a>
+          </p>
+        </p>
+      </div>
     </footer>
   );
 };

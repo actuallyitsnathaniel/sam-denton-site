@@ -22,8 +22,10 @@ export const MobileNav = ({
           }`}
         >
           <NavItems
-            classNames={`flex flex-col justify-around items-center`}
-            {...{ expanded, setExpanded, pageTitle, setModalOpen }}
+            classNames={`flex flex-col justify-around items-center ${
+              expanded && "text-white"
+            }`}
+            {...{ setExpanded, pageTitle, setModalOpen }}
           />
         </div>
       </nav>
