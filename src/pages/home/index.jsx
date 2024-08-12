@@ -11,11 +11,11 @@ import ebba from "../../assets/images/discography/LPs/ebba_600x600bb.jpg";
 
 const Home = () => {
   return (
-    <div className="flex flex-grow flex-col w-screen items-center justify-stretch">
-      <img src={samDentonLogo} className="max-h-72 md:-translate-x-28" />
-
-      {/* <p>ebba out soon</p> */}
-      <img id="ebba-cover" src={ebba} className="max-h-72" />
+    <div className="flex w-screen justify-stretch">
+      <img
+        src={samDentonLogo}
+        className="md:absolute md:top-0 md:right-0 object-scale-down max-h-52"
+      />
 
       <div className="flex-col text-center text-white" hidden>
         <h1 className="p-3 text-[150%] md:text-5xl  whitespace-nowrap">

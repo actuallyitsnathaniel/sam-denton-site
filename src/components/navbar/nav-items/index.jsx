@@ -9,9 +9,7 @@ export const NavItems = ({
   return (
     <ul
       id="nav-bar"
-      className={`flex text-3xl sm:justify-around ${
-        !!classNames && classNames
-      }`}
+      className={`flex text-xl sm:justify-around ${!!classNames && classNames}`}
     >
       <NavItem title="home" to="/home" {...{ pageTitle, setExpanded }} />
       <NavItem title="music" to="/music" {...{ pageTitle, setExpanded }} />

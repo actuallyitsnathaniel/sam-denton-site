@@ -10,7 +10,7 @@ export const MobileNav = ({
   return (
     <div id="nav-bar">
       <nav
-        className={`fixed z-[1] h-30 transition-all bg-opacity-0 ${
+        className={`font-moslin fixed z-[1] h-30 transition-all bg-opacity-0 ${
           pageTitle.includes("links") && "hidden"
         } ${expanded && "bg-black backdrop-blur-md bg-opacity-80 h-full"}`}
       >

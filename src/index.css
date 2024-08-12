@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "Moslin";
+  src: url("./assets/fonts/Moslin.otf");
+}
+
+@font-face {
+  font-family: "SP-Blunt";
+  src: url("./assets/fonts/SP-Blunt-Regular.otf");
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;

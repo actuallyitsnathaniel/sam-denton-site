@@ -17,10 +17,8 @@ const Discography = ({ children }) => {
   return (
     <>
       <div>
-        <h2
-          className={"flex text-6xl font-semibold italic justify-center p-10"}
-        >
-          singles/EPs
+        <h2 className={"flex text-5xl font-moslin justify-center p-10"}>
+          singles<span className="font-sp-blunt">/</span>EPs
         </h2>
         <motion.div
           initial="hidden"
@@ -59,9 +57,7 @@ const Discography = ({ children }) => {
       </div>
 
       <div>
-        <h2
-          className={"flex text-6xl font-semibold italic justify-center p-10"}
-        >
+        <h2 className={"flex text-5xl font-moslin justify-center p-10"}>
           albums
         </h2>
         <div className={"flex flex-row flex-wrap w-full justify-center"}>

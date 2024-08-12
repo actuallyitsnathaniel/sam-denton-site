@@ -6,7 +6,7 @@ export const DesktopNav = ({ pageTitle, setExpanded, setModalOpen }) => {
     <>
       <SocialLinks />
       <nav
-        className={`fixed flex flex-col bottom-0 z-[1] text-black
+        className={`font-moslin fixed flex flex-col bottom-0 z-[1] text-black
         transition-all duration-100 ease-in-out ${
           pageTitle.includes("links") && "hidden"
         }`}

@@ -19,7 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        serif: ["Special Elite", ...defaultTheme.fontFamily.serif],
+        "sp-blunt": ["SP-Blunt", "sans-serif"],
+        moslin: ["Moslin", "sans-serif"],
       },
     },
   },

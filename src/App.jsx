@@ -21,12 +21,12 @@ const App = () => {
   // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
   return (
     <BrowserRouter forceRefresh>
-      <div className={`flex flex-col min-h-screen max-w-screen font-serif`}>
+      <div className={`flex flex-col min-h-screen max-w-screen font-sp-blunt`}>
         <ImageBackground />
 
         <AnimatePresence mode="popLayout">
           <NavBar />
-          <div className="md:ml-28">
+          <div className="mt-16 md:mt-auto md:ml-28">
             <Routes key={location.pathname}>
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />
