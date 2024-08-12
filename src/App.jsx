@@ -15,18 +15,17 @@ import Music from "./pages/music";
 import Shows from "./pages/shows";
 import Secret from "./pages/secret";
 import ErrorPage from "./pages/error";
-import { ImageBackground } from "./components/video-background";
+import { ImageBackground } from "./components/media-background";
 
 const App = () => {
-  // TODO: potentially put the paper over EVERYTHING, then do a mix blend.
   return (
     <BrowserRouter forceRefresh>
       <div className={`flex flex-col min-h-screen max-w-screen font-sp-blunt`}>
         <ImageBackground />
 
-        <AnimatePresence mode="popLayout">
+        <AnimatePresence mode="sync">
           <NavBar />
-          <div className="mt-16 md:mt-auto md:ml-28">
+          <div className="mt-16 md:mt-auto md:ml-36">
             <Routes key={location.pathname}>
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />

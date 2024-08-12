@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import { NavItem } from "./nav-item";
 
 export const NavItems = ({
@@ -9,7 +10,10 @@ export const NavItems = ({
   return (
     <ul
       id="nav-bar"
-      className={`flex text-xl sm:justify-around ${!!classNames && classNames}`}
+      className={clsx(
+        "flex text-xl sm:justify-around",
+        `${!!classNames && classNames}`
+      )}
     >
       <NavItem title="home" to="/home" {...{ pageTitle, setExpanded }} />
       <NavItem title="music" to="/music" {...{ pageTitle, setExpanded }} />

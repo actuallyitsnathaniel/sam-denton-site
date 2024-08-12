@@ -7,9 +7,9 @@ const Footer = () => {
       className="grid text-md text-black w-full text-center pt-4 mt-auto bottom-0"
     >
       <div className="py-3">
-        <div className="sm:hidden flex justify-center">
+        {/* <div className="sm:hidden flex justify-center">
           <SocialLinks />
-        </div>
+        </div> */}
         <p className="grid md:text-md">
           Copyright © {new Date().getFullYear()} sam denton.
           <p>
