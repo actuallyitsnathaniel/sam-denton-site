@@ -11,11 +11,11 @@ import ebba from "../../assets/images/discography/LPs/ebba_600x600bb.jpg";
 const Home = () => {
   return (
     <div className="flex flex-col w-screen justify-stretch">
-      {/* <div className="flex-col text-center text-white" hidden>
-        <h1 className="p-3 text-[150%] md:text-5xl  whitespace-nowrap">
+      <div className="flex-col text-center text-black">
+        <h1 className="p-3 md:text-5xl hidden whitespace-nowrap">
           Upcoming Shows
         </h1>
-      </div> */}
+      </div>
     </div>
   );
 };

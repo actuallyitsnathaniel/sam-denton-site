@@ -18,6 +18,7 @@ export const NavItems = ({
       <NavItem title="home" to="/home" {...{ pageTitle, setExpanded }} />
       <NavItem title="music" to="/music" {...{ pageTitle, setExpanded }} />
       <NavItem title="about" to="/about" {...{ pageTitle, setExpanded }} />
+      <NavItem title="shows" to="/shows" {...{ pageTitle, setExpanded }} />
       <button
         className={`flex transition ease-in-out p-4 px-4 duration-150
             hover:scale-110 cursor-pointer`}

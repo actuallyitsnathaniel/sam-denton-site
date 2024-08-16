@@ -25,7 +25,7 @@ const App = () => {
 
         <AnimatePresence mode="sync">
           <NavBar />
-          <div className="mt-16 md:mt-auto md:ml-36">
+          <div className="mt-16 md:mt-auto md:ml-36 md:-translate-x-[4rem]">
             <Routes key={location.pathname}>
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />
