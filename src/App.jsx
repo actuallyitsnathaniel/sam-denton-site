@@ -7,7 +7,7 @@ import NavBar from "./components/navbar";
 import Footer from "./components/footer";
 
 import Home from "./pages/home";
-import Contact from "./pages/contact";
+// import Contact from "./pages/contact";
 import About from "./pages/about";
 import Links from "./pages/links";
 import Merch from "./pages/merch";
@@ -30,11 +30,11 @@ const App = () => {
               <Route index element={<Navigate replace to="/home" />} />
               <Route path="/home" element={<Home />} />
               <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
+              {/* <Route path="/contact" element={<Contact />} /> */}
               <Route path="/links" element={<Links />} />
               <Route path="/digitals" element={<Merch />} />
               <Route path="/music" element={<Music />} />
-              <Route path="/shows" element={<Shows />} />
+              <Route path="/live" element={<Shows />} />
               <Route path="/secret" element={<Secret />} />
               <Route path="*" element={<ErrorPage />} />
             </Routes>
