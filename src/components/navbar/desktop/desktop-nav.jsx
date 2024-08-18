@@ -3,6 +3,7 @@ import { NavItems } from "../nav-items";
 
 import samDentonTitle from "../../../assets/images/graphics/samdentonbloblogo.png";
 import SDLogo from "../../../assets/images/graphics/sdlogo.png";
+import label432 from "../../../assets/images/graphics/432.png";
 
 export const DesktopNav = ({
   pageTitle,
@@ -41,6 +42,10 @@ export const DesktopNav = ({
       <img
         src={SDLogo}
         className="fixed bottom-0 left-0 p-5 max-h-28 object-contain"
+      />
+      <img
+        src={label432}
+        className="fixed bottom-0 right-0 p-5 max-h-28 object-contain"
       />
     </>
   );
