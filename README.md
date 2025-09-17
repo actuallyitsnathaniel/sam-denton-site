@@ -1,11 +1,12 @@
 # Sam Denton Music Website 
 
 <h3 align="center">Desktop</h3>
-  <img width="1403" alt="Screenshot 2023-11-03 at 4 19 43 PM" src="https://github.com/actuallyitsnathaniel/sam-denton-site/assets/38742706/0135352a-c245-44bb-91aa-6582cd6a6110">
+<img width="1430" height="748" alt="Screenshot 2025-09-17 at 12 05 08 PM" src="https://github.com/user-attachments/assets/b111e271-fdcb-4d2c-822f-46f3aab62345" />
+
 
 <h3 align="center">Mobile</h3>
 <p align="center">
-  <img width="375" alt="Screenshot 2023-11-03 at 4 20 13 PM" src="https://github.com/actuallyitsnathaniel/sam-denton-site/assets/38742706/ef97093f-f39f-4357-bae4-79bbd550eae9">
+  <img width="490" height="745" alt="Screenshot 2025-09-17 at 12 05 38 PM" src="https://github.com/user-attachments/assets/d38b46b6-4dec-4cf7-9d1e-24f9ecc2f531" />
 </p>
 
 _The spot for everything Sam Denton. Music, merch, and much more. Come dream up some new tunes with us!_
