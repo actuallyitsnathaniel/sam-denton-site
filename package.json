@@ -21,7 +21,7 @@
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@svgr/webpack": "^8.1.0",
     "@vitejs/plugin-react": "^4.2.1",
-    "autoprefixer": "^10.4.16",
+    "autoprefixer": "^10.4.23",
     "cssnano": "^6.0.1",
     "postcss": "^8.4.32",
     "postcss-cli": "^11.0.0",
